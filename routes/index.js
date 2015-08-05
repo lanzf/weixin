@@ -21,11 +21,11 @@ router.route('/login')
     }
     res.redirect('/login');
 });
- 
+
 router.get('/logout', function(req, res) {
     res.redirect('/');
 });
- 
+
 router.get('/home', function(req, res) {
     var user={
         username:'admin',
@@ -33,7 +33,10 @@ router.get('/home', function(req, res) {
     }
     res.render('home', { title: 'Home', user: user });
 });
- 
+
+
+
+
 module.exports = router;
 
 module.exports = router;
